@@ -3,17 +3,16 @@ package com.example.taskssqlite
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.taskssqlite.databinding.ActivityAddNoteBinding
-import com.example.taskssqlite.databinding.ActivityMainBinding
+import com.example.taskssqlite.databinding.ActivityAddTaskBinding
 
-class AddNoteActivity : AppCompatActivity() {
+class AddTaskActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAddNoteBinding
+    private lateinit var binding: ActivityAddTaskBinding
     private lateinit var db: TasksDatabaseHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAddNoteBinding.inflate(layoutInflater)
+        binding = ActivityAddTaskBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         db = TasksDatabaseHelper(this)

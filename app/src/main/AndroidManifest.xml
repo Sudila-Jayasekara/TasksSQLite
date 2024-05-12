@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TasksSQLite"
         tools:targetApi="31">
         <activity
-            android:name=".AddNoteActivity"
+            android:name=".AddTaskActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
