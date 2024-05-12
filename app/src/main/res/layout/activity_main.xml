@@ -17,13 +17,22 @@
         android:layout_marginStart="18dp"
         android:textColor="@color/orange"
         android:textSize="24sp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasksHeading"
+        android:layout_margin="8dp"
+        android:text="Search here"
+        app:queryHint="Search Here..."/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tasksRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_below="@+id/searchView"
         android:padding="16dp"/>
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addButton"

@@ -51,6 +51,7 @@ class TasksAdapter(private var tasks: List<Task>, context: Context) : RecyclerVi
 
     fun refreshData(newTasks: List<Task>) {
         tasks = newTasks
-        notifyItemRangeChanged(0, tasks.size)
+        notifyDataSetChanged()
     }
+
 }
